@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>This is a game of rock-paper-scissor.</h1></center>
+    <h2>
+    <script>
+        let choice=["rock","paper","scissor"];
+        let ran = Math.floor(Math.random() * choice.length);
+        let index=choice[ran];
+        let input=prompt("Enter any from rock,paper,scissor:");
+        document.write("You have entered : ", input);
+        document.write("<br>The computer has generated : ",index);
+        if(input=="rock"){
+            if(index=="rock"){
+                document.write("<br> Draw");
+            }
+            else if(index=="paper"){
+                document.write("<br> Lose");
+            }
+            else{
+                document.write("<br> Win");
+            }
+        }
+        else if(input=="paper"){
+            if(index=="rock"){
+                document.write("<br> Win");
+            }
+            else if(index=="paper"){
+                document.write("<br> Draw");
+            }
+            else{
+                document.write("<br> Lose");
+            }
+        }
+        else{
+            if(index=="rock"){
+                document.write("<br> Lose");
+            }
+            else if(index=="paper"){
+                document.write("<br> Win");
+            }
+            else{
+                document.write("<br> Draw");
+            }
+        }
+    </script>
+    </h2>
+</body>
+</html>
